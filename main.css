@@ -42,7 +42,7 @@ header{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    background-image: url('../Images/3.png');
+    background-image: url('3.png');
     background-size: 30px;
     background-position-x: right;
     background-repeat: no-repeat;
