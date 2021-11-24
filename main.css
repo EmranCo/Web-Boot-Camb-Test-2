@@ -1,0 +1,239 @@
+:root{
+    --dark-color: #2f1b0e;
+    --white-color: #f8f9fb;
+    --border-color:#472914;
+    --active-color:#8d522a;
+    --dark-white-color:#6b5450;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.newFont{
+    font-family: 'Curlz MT';
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: var(--dark-color,#2f1b0e);
+    padding: 15px 2%;
+    height: 60px;
+    display: flex;
+}
+
+.active{
+    background-color: var(--active-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    transition: ease-in-out .2s;
+}
+
+#logo{
+    flex-basis: 15%;
+    font-size: 30px; 
+    color: var(--white-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('../Images/3.png');
+    background-size: 30px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+}
+
+#control-btns
+{
+    padding: 10px 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-items: end;
+}
+
+#control-btns button , #cover-btn
+{
+    padding: 10px 20px;
+    color: var(--white-color);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cover-btn {color: var(--dark-color);}
+header ul {
+    flex-grow: 2;
+    margin-left: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline;
+    text-decoration: none;
+}
+
+header ul li {
+
+    padding: 10px;
+    margin-left: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    color:var(--dark-white-color);
+    display: inline;
+    text-decoration: none;
+}
+
+
+header ul li a select {
+
+    background-color: transparent;
+    border: none;
+    color: var(--dark-white-color);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 90px;
+}
+
+header ul li a select option{
+
+    background-color: var(--dark-color);
+    border: 1px solid var(--border-color);
+    color: var(--dark-white-color);
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    width: 90px;
+}
+
+
+header ul li:hover , #control-btns button:hover , #cover-btn:hover{
+    background-color: var(--active-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+header ul li a select:hover{
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+
+.clear{
+clear: both;
+height:65px;
+}
+
+.container{
+
+    width:100%;
+    background-image: url('../Images/coffee4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0px;
+    margin-top: 17px;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+
+}
+.container h1{
+
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+.container h4{
+
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.container h1 a:hover {
+
+   color: var(--white-color);
+   text-shadow: var(--active-color) 10px 10px 10px;
+   transition: ease-in-out 0.4s;
+}
+
+
+main{
+
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 40px;
+}
+
+.flex-line
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+
+}
+.flex-line img {
+    width:50px;
+    height: 50px;
+    justify-items: center;
+    text-align: center;
+}
+
+.cardContainer{
+    display: grid;
+    f
+}
+.card 
+{
+    width:400px;
+    height:400px;
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+    width:100%;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding:50px 0;
+}
+
